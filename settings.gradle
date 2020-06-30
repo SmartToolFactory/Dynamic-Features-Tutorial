@@ -1,0 +1,2 @@
+include ':Tutorial1-1Basics'
+rootProject.name = "Dynamic Features Tutorial"
