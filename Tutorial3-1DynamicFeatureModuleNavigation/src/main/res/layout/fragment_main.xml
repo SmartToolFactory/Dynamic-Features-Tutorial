@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnDestHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home from App"
+            app:layout_constraintBottom_toTopOf="@+id/btnDestDashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDestDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Module Dashboard"
+            app:layout_constraintBottom_toTopOf="@+id/btnDashboardActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDestHome" />
+
+
+        <Button
+            android:id="@+id/btnDashboardActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Module Dashboard Activity"
+            app:layout_constraintBottom_toTopOf="@+id/btnDestNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDestDashboard" />
+
+
+        <Button
+            android:id="@+id/btnDestNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Module Notification Included"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDashboardActivity" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

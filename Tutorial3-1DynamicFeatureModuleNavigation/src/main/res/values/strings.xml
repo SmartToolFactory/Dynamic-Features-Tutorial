@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tutorial3-1DynamicFeatureModuleNavigation</string>
+    <string name="title_feature3_1camera">Camera</string>
+    <string name="title_feature3_dashboard">Module Title</string>
+    <string name="title_feature3_notification">Notification</string>
+    <string name="title_dashboard">Dashboard</string>
+</resources>

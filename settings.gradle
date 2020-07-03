@@ -1,8 +1,12 @@
-include ':feature2_photo'
-include ':Tutorial2-1SplitInstallManager'
 include ':feature1_news'
-rootProject.name = "Dynamic Features Tutorial"
-
 include ':features:feature1_gallery'
 include ':features:feature1_login'
+include ':features:feature2_photo'
+include ':feature3_notification'
+include ':feature3_dashboard'
+
 include ':Tutorial1-1Basics'
+include ':Tutorial2-1SplitInstallManager'
+include ':Tutorial3-1DynamicFeatureModuleNavigation'
+
+rootProject.name = "Dynamic Features Tutorial"

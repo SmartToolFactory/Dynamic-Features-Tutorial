@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!-- Main Fragment from App Module -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.smarttoolfactory.tutorial3_1dynamicfeaturemodulenavigation.blankfragment.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_nav_graph_home"
+            app:destination="@id/nav_graph_home" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_dashboardActivity"
+            app:destination="@id/dashboardActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_nav_graph_dashboard"
+            app:destination="@id/nav_graph_dashboard" />
+        <action
+            android:id="@+id/action_mainFragment_to_nav_graph_notification"
+            app:destination="@id/nav_graph_notification" />
+
+    </fragment>
+
+    <!-- Home Navigation from App Module-->
+    <include app:graph="@navigation/nav_graph_home" />
+
+    <!-- Dashboard Navigation from feature3_dashboard -->
+
+
+    <!-- feature3_dashboard module nested navigation -->
+    <navigation
+        android:id="@+id/nav_graph_dashboard"
+        app:moduleName="feature3_dashboard"
+        app:startDestination="@id/featureFragmentNested">
+
+        <fragment
+            android:id="@+id/featureFragmentNested"
+            android:name="com.smarttoolfactory.feature3_dashboard.blankfragment.DashboardFragment1"
+            android:label="Dashboard Fragment"
+            app:moduleName="feature3_dashboard"
+            tools:layout="@layout/fragment_dashboard1" />
+    </navigation>
+
+
+    <!-- feature3_dashboard Activity-->
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="com.smarttoolfactory.feature3_dashboard.DashboardActivity"
+        android:label="DashboardActivity"
+        app:moduleName="feature3_dashboard"
+        tools:layout="@layout/activity_dashboard"/>
+
+
+    <!-- feature3_notification dynamic feature module-->
+    <include-dynamic
+        android:id="@+id/nav_graph_notification"
+        android:name="com.smarttoolfactory.feature3_notification.blankfragment"
+        app:graphResName="nav_graph_notification"
+        app:moduleName="feature3_notification" />
+
+
+</navigation>

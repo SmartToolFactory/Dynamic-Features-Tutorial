@@ -14,11 +14,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Tutorial1-1Basics" />
             <option value="$PROJECT_DIR$/Tutorial2-1SplitInstallManager" />
+            <option value="$PROJECT_DIR$/Tutorial3-1DynamicFeatureModuleNavigation" />
             <option value="$PROJECT_DIR$/feature1_news" />
-            <option value="$PROJECT_DIR$/feature2_photo" />
+            <option value="$PROJECT_DIR$/feature3_dashboard" />
+            <option value="$PROJECT_DIR$/feature3_notification" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/feature1_gallery" />
             <option value="$PROJECT_DIR$/features/feature1_login" />
+            <option value="$PROJECT_DIR$/features/feature2_photo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
