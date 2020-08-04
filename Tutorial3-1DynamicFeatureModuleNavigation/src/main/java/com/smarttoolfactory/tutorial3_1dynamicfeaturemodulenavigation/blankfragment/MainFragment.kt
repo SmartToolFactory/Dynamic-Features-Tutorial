@@ -50,6 +50,7 @@ class MainFragment : BaseDataBindingFragment<FragmentMainBinding>() {
 //                DynamicExtras(installMonitor)
 //            )
 
+            // FIXME Only navigates to first fragment, navController can not find others
             navigateWithInstallMonitor(R.id.action_mainFragment_to_nav_graph_dashboard)
 
         }
